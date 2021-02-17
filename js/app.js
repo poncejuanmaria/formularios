@@ -19,3 +19,18 @@ function validarEmail(email) {
     email.className = "form-control is-invalid";
   }
 }
+
+function validarNumeros(numeros) {
+  if (numeros.value.trim() != "" && !isNaN(numeros.value)) {
+    numeros.className = "form-control is-valid";
+  } else {
+    numeros.className = "form-control is-invalid";
+  }
+}
+
+//isNotANumber
+//isNaN('hola') = el resultado va a ser true;
+//isNaN(234234) = el resultado es false;
+//! not (operador logico de no) !true es no es true.
+//!true = false; !false= true;
+//!isNaN y se ingresa un numero es TRUE

@@ -63,11 +63,11 @@
             <div class="mb-3">
               <label class="form-label">Teléfono</label>
               <input
-                type="number"
+                type="text"
                 class="form-control"
                 id="telefono"
                 placeholder="3814665555"
-                required
+                onblur="validarNumeros(this)"
               />
               <div class="invalid-feedback">
                 Debe ingresar un telefono correcto
